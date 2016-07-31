@@ -276,13 +276,13 @@ void ShowContextMenu(HWND hWnd)
 	if (hMenu)
 	{
 		InsertMenu(hMenu, -1, MF_BYPOSITION, SWM_EXIT, L"Exit");
-	}
 
-	POINT pt;
-	GetCursorPos(&pt);
-	SetForegroundWindow(hWnd);
-	TrackPopupMenu(hMenu, TPM_BOTTOMALIGN, pt.x, pt.y, 0, hWnd, NULL);
-	DestroyMenu(hMenu);
+		POINT pt;
+		GetCursorPos(&pt);
+		SetForegroundWindow(hWnd);
+		TrackPopupMenu(hMenu, TPM_BOTTOMALIGN, pt.x, pt.y, 0, hWnd, NULL);
+		DestroyMenu(hMenu);
+	}
 }
 
 //
