@@ -1,0 +1,1 @@
+Uses CTRL+ALT+T to enable/disable the touchscreen. Particularly useful for laptops that suffer from "ghost touches".
